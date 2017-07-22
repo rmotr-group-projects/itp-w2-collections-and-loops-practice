@@ -1,10 +1,34 @@
 
 def _is_prime(number):
-    pass
+    if number == 2:
+        return True
+    
+    #[1,2,3,4,....,number-1]
+    for i in range(2,number):
+        if number % i == 0:
+            return False
+    
+    return True
+        
+    # number = 9 /3 =3 
+    # for i in [2,3,4,5,6,7,8]
+    # i = 2
+    # 9 % 2 = 1
+    # 9 % 3 = 0
 
+
+    
 
 def list_of_prime_numbers(max_number):
-    pass
+    result = []
+    for num in range(2, max_number + 1):
+        current = _is_prime(num)
+        # returns a boolean
+        if current:
+            result.append(num)
+            # [,True, False]
+    return result
+
 
 # =================== #
 # ====== Tests ====== #

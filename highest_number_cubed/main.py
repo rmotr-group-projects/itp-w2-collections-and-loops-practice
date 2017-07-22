@@ -1,6 +1,12 @@
 def highest_number_cubed(limit):
-    pass
-
+    count=0
+    while (count**3) < limit:
+        count+=1
+        
+    return (count-1)
+    
+    #bad
+    #assert 3 == 1
 
 def test_three():
     assert highest_number_cubed(30) == 3
