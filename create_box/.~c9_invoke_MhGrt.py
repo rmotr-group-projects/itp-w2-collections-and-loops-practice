@@ -1,10 +1,9 @@
 def create_box(height, width, character):
-    stuff = ""
     for i in range(height):
-        stuff += (((str(character) * width) + "\n"))
-    return stuff  
-
-print(create_box(6, 2, '@'))
+        print(character)
+            print((str(character) * width) )
+        
+create_box(3, 4, '*')
 
 
 # Tests:
