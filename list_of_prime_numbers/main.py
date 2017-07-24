@@ -1,10 +1,19 @@
-
 def _is_prime(number):
-    pass
-
+  if number == 2:
+      return True
+  for i in range(2,number):
+      if number % i == 0:
+        return False
+  return True
 
 def list_of_prime_numbers(max_number):
-    pass
+  if max_number == 2:
+      return [2]
+  final_list = []
+  for i in range(1,max_number+1):
+      if i != 1 and _is_prime(i):
+          final_list += [i]
+  return final_list
 
 # =================== #
 # ====== Tests ====== #

@@ -1,5 +1,8 @@
 def highest_number_cubed(limit):
-    pass
+    guess = 1
+    while guess**3 < limit:
+      guess += 1
+    return guess - 1
 
 
 def test_three():
