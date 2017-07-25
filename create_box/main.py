@@ -1,8 +1,15 @@
 def create_box(height, width, character):
-    pass
+    s = ''
+    for i in range(height):
+        for j in range(width):
+            s += character
+        s += '\n'
+        
+    return s 
+    
+         
 
 
-# Tests:
 
 first_box_expected = """
 ****
