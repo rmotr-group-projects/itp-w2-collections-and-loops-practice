@@ -1,5 +1,13 @@
+# take an input and find the highest number which when cubed is less than the input
+# ** is exponentiation operation in python
 def highest_number_cubed(limit):
-    pass
+    # start at the top of the range and count down 
+    for i in reversed(range(1,(limit+1))):
+        if i**3 >=limit:
+            print("%s too big" % i)
+        else:
+            print("%s is just right" % (i))
+            return i
 
 
 def test_three():
