@@ -39,7 +39,7 @@ repeat = 0
 while True:
     row = character * width
     repeat += 1
-    box = box + '\n' + row 
+    box = box + row + '\n'
  
     if repeat == height:
         break
@@ -56,7 +56,7 @@ def create_box(height, width, character):
     while True:
         row = character * width        
         repeat += 1
-        box = box + '\n' + row
+        box = box + row + '\n' 
     
         if repeat == height:
             break
@@ -81,7 +81,7 @@ def create_box(height, width, character):
         while True:
             row = character * width        
             repeat += 1
-            box = box + '\n' + row
+            box = box + row + '\n' 
     
             if repeat == height:
                 break
