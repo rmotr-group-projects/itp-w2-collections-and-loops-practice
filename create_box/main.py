@@ -7,9 +7,7 @@ def create_box(height, width, character):
 def create_border(height, width, character):
     box = ''
     for y in range(height):
-        if y == 0:
-            box += character * width + '\n'
-        elif y == height - 1:
+        if y == 0 or y == height - 1:
             box += character * width + '\n'
         else:
             box += character + ' ' * (width - 2)+ character + '\n'
