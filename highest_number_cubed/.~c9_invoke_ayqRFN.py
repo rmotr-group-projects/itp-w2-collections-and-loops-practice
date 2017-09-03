@@ -1,10 +1,9 @@
 def highest_number_cubed(limit):
-    number = 1
+    number 
     while number**3 < limit:
-        number = number + 1
-    return number - 1
+        number += 1
+    return number -1
 
-# The above program seems to work in REPL, but I am having trouble running the tests in the terminal here in Cloud9
 
 def test_three():
     assert highest_number_cubed(30) == 3
