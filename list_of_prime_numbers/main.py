@@ -1,10 +1,16 @@
 
 def _is_prime(number):
+    
+    # if number is 1 or 0 it is not prime
     if number <= 1:
       return False
+    
+    # divide number by every number below it if any are divisible it is not prime
     for n in range(2, number):
       if number%n == 0:
         return False
+   
+    # if loop completes without ending number is prime
     return True
 
 
