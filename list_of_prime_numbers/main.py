@@ -1,10 +1,27 @@
-
 def _is_prime(number):
-    pass
+# setting up the variable to test if a number is prime or not
+  var = 2                   
+  while var < number:
+#while the var is lower then the number the test should continue
+    if number % var == 0:
+      return False
+# while the provided number divided by the test variable does not result in a remainder (i.e. number not prime)
+#the test should return false
+    elif number % var == 0:
+      break
+# another elif with the same test but this time it breaks out of the loop
+    var = var + 1
+  
+  return True
 
 
-def list_of_prime_numbers(max_number):
-    pass
+
+def list_of_prime_numbers(number):
+    answer_list = []
+    for i in range(2, number+1):
+        if _is_prime(i) == True:
+            answer_list.append(i)
+    return answer_list
 
 # =================== #
 # ====== Tests ====== #
