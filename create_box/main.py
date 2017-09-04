@@ -32,6 +32,10 @@ xxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxx
 """.lstrip()
 
+# Tests
+# print (create_box (3,4, "*"))
+# print (create_box (2,10, "erica"))
+
 
 def test_first_box():
     assert create_box(3, 4, '*') == first_box_expected
