@@ -1,6 +1,5 @@
 
 def _is_prime(number):
-    
     # if number is 1 or 0 it is not prime
     if number <= 1:
       return False
@@ -12,20 +11,17 @@ def _is_prime(number):
    
     # if loop completes without ending number is prime
     return True
+        
 
 
 def list_of_prime_numbers(max_number):
     l = [] #empty list
-    for i in range(2, max_number):
+    for i in range(2, max_number + 1):
         if _is_prime(i):
             l.append(i)
-            i+=1
-        else:
-            i+=1
-    print l
     
-    
-    
+    # print (l)        
+    return l
 
 
 ''' ```python
