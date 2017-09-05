@@ -1,10 +1,52 @@
-
 def _is_prime(number):
-    pass
+
+# Gagan's Solution
+    if number == 2:
+        result = True
+    elif number % 2 == 0:
+        result = False
+    elif number <= 1:
+        result = False
+    else:
+        n = 2
+        while n < number:
+            remainder = number % n
+            if remainder == 0:
+                result = False
+                break
+            else:
+                result = True
+            n += 1
+    return result
+
+def list_of_prime_numbers(number):
+    n = 2
+    prime_list = []
+    if number < 2:
+        return prime_list
+    elif number >= 2:
+        while n <= number:
+            if _is_prime(n) == True:
+                prime_list.append(n)
+                # print(prime_list)
+            n += 1
+        return prime_list
+
+""" Szilvia's Solution
+    for i in (2, number):
+            while number:
+               if number == 2:
+                   return True
+               elif number%i == 0:
+                   return False
+               else:
+                   return True
 
 
 def list_of_prime_numbers(max_number):
     pass
+   
+"""
 
 # =================== #
 # ====== Tests ====== #
