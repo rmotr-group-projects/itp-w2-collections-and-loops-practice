@@ -1,6 +1,6 @@
-def highest_number_cubed(limit):
-    pass
-
+import math
+def highest_number_cubed(x):
+    return math.floor(math.pow(x, 1.0/3))
 
 def test_three():
     assert highest_number_cubed(30) == 3
