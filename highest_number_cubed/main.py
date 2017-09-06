@@ -1,7 +1,6 @@
-def highest_number_cubed(limit):
-    pass
-
-
+def highest_number_cubed(limit): 
+    return int(limit**(1/3))
+ 
 def test_three():
     assert highest_number_cubed(30) == 3
 
