@@ -1,4 +1,4 @@
-# [itp-w1] Create Box
+# Create Box
 
 Write a program that takes three inputs: height, width, and character.
 Use your knowledge of loops to create a box made of characters based on the inputs.
