@@ -1,5 +1,25 @@
+def highest_number_cubed(limit):#max version
+    testing = 1
+    testing_state = True
+    
+    while testing_state == True:
+        if testing ** 3 < limit:
+            testing +=1
+        elif testing ** 3 == limit:
+            testing_state = False
+            return testing
+        else:
+            testing_state = False
+            return testing-1
+
 def highest_number_cubed(limit):
-    pass
+  results = []
+  for i in range(limit):
+    test = i ** 3
+    if test <= limit:
+      results.append(i)
+      i += 1
+  return max(results)   
 
 
 def test_three():
