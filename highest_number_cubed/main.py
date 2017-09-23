@@ -1,6 +1,12 @@
 def highest_number_cubed(limit): 
-    return int(limit**(1/3))
- 
+    #return int(limit**(1/3))
+
+    i = 0
+    for i in limit:
+        if i ** 3 < limit:
+            return i + 1
+        else:
+            return i - 1
 def test_three():
     assert highest_number_cubed(30) == 3
 

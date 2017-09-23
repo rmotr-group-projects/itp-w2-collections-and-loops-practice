@@ -1,11 +1,14 @@
 def create_box(height, width, character):
-    if width >= 1 and height >= 1:
-        diagram = ""
-        for row in range(height):
-            for column in range(width):
-                diagram += character
-            diagram = diagram + '\n'
-        return diagram
+    string = ""
+    if height >= 1 and width >= 1:
+        for h in range(height):
+            for w in range(width):
+                string += character
+            string += "\n"
+            
+        return string
+    else:
+        return 'invalid size'
 
 # I've added the if statement to test if the given height and width are <= 1, otherwise thows an error.
 # I'm working on the last enhancement 'only the outer border of the box shows and it is not filled in', but it's difficult. 

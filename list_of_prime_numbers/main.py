@@ -1,9 +1,9 @@
 def _is_prime(number):
-    for n in range(2,number):
-        if number % 2 == 0:
+    
+    for i in range(2,number):
+        if number%i == 0:
             return False
     return True
-
 
 def list_of_prime_numbers(max_number):
     new_list=[]
