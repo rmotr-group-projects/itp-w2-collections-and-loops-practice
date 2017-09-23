@@ -1,7 +1,18 @@
 def create_box(height, width, character):
-    pass
-
-
+    row = 0
+    box = ''
+    while row < height:
+        printrow = ''
+        column = 0
+        printcolumn = ''
+        while column < width:
+            printcolumn += character
+            column += 1
+        printrow = printcolumn + "\n"
+        row += 1 
+        box += printrow   
+    return box
+print(create_box(3, 4, '*'))
 # Tests:
 
 first_box_expected = """
