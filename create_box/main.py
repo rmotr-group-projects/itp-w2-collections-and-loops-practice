@@ -1,6 +1,17 @@
 def create_box(height, width, character):
-    pass
+    result = ''
+    if height < 1 and width < 1:
+        return "bad dimension"
+        
+    for row in range(height):
+        for column in range(width):
+           result += character 
+            
+        result+='\n'
+    return result
 
+
+# py.test -v --tb=short create_box
 
 # Tests:
 
