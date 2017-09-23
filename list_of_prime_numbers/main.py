@@ -1,10 +1,36 @@
 
 def _is_prime(number):
-    pass
-
+    if(number ==0):
+        return False
+    if (number == 1):
+        return False
+    if (number == 2):
+        return True
+    for i in range(2, number):
+        if (number % i == 0):
+            return False
+    return True
+    
+#print(_is_prime(23)) #prime
+#print(_is_prime(26)) #not prime
+#print(_is_prime(45)) #not prime
+#print(_is_prime(73)) #prime
+#print(_is_prime(5))  #prime
+#print(_is_prime(2))  #prime
 
 def list_of_prime_numbers(max_number):
-    pass
+    arr = []
+    
+    for i in range(2, max_number + 1):
+        if(_is_prime(i)):
+            arr.append(i)
+            
+        
+    return arr
+  
+    
+#list_of_prime_numbers(100)
+#list_of_prime_numbers(59)
 
 # =================== #
 # ====== Tests ====== #
@@ -45,3 +71,7 @@ def test_list_one():
 
 def test_list_zero():
     assert list_of_prime_numbers(0) == []
+    
+#test_big_number_prime_true() 
+#test_big_number_list()
+
