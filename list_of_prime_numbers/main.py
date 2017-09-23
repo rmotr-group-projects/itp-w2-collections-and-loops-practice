@@ -1,10 +1,41 @@
 
 def _is_prime(number):
-    pass
+    # if number is 1 or 0 it is not prime
+    if number <= 1:
+      return False
+    
+    # divide number by every number below it if any are divisible it is not prime
+    for n in range(2, number):
+      if number%n == 0:
+        return False
+   
+    # if loop completes without ending number is prime
+    return True
+        
 
 
 def list_of_prime_numbers(max_number):
-    pass
+    l = [] #empty list
+    for i in range(2, max_number + 1):
+        if _is_prime(i):
+            l.append(i)
+    
+    # print (l)        
+    return l
+
+
+''' ```python
+>>> _is_prime(5)
+True
+>>> _is_prime(4)
+False
+>>> list_of_prime_numbers(10)
+[2, 3, 5, 7]
+>>> list_of_prime_numbers(19)
+[2, 3, 5, 7, 11, 13, 17, 19]
+```
+'''
+
 
 # =================== #
 # ====== Tests ====== #

@@ -1,6 +1,8 @@
 def highest_number_cubed(limit):
-    pass
-
+    #calculate limit's cubic root
+    number = limit ** (1.0 / 3.0)
+    #convert result to integer
+    return int(number)
 
 def test_three():
     assert highest_number_cubed(30) == 3
