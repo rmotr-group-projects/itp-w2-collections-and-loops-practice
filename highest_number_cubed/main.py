@@ -1,5 +1,9 @@
 def highest_number_cubed(limit):
-    pass
+    for num in range(limit): 
+        if num % 3 == 0:
+         num = max(range(limit)) 
+         root = num ** (1./3) 
+    return int(root)     
 
 
 def test_three():
