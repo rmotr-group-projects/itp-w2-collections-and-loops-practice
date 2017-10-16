@@ -1,16 +1,22 @@
 def create_box(height, width, character):
+    numrows = 0
     row = width * character
-    for a in range(height - 1):
+    while numrows < height:
         print(row)
-    return row
+        numrows += 1
+    return (create_box)
 
-"""
-height = 1
-width = 1
+
+
+
+
+
+height = 6
+width = 3
 character = '@'
 testcode = create_box(height, width, character)
 print(testcode)
-"""
+
 
 
 # Tests:
