@@ -1,10 +1,24 @@
-
 def _is_prime(number):
-    pass
+    if number <= 1:
+        return []
+    elif number <= 3:
+        return True
+    else:
+        for x in range(2, number + 1):
+            if number % x == 0 or number % 3 == 0:
+                return False
+            else:
+                return True 
 
 
 def list_of_prime_numbers(max_number):
-    pass
+    prime_numbers = []
+
+    for num in range(max_number + 1):
+        if _is_prime(num):
+            prime_numbers.append(num)
+
+    return prime_numbers        
 
 # =================== #
 # ====== Tests ====== #
@@ -45,3 +59,4 @@ def test_list_one():
 
 def test_list_zero():
     assert list_of_prime_numbers(0) == []
+
