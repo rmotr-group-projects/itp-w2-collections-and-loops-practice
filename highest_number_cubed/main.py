@@ -3,6 +3,7 @@ def highest_number_cubed(limit):
     test_value = 1
     cubed_number = test_value
 
+
     def cube_number(value):
         import math
 
@@ -29,9 +30,3 @@ def test_one():
 
 def test_big():
     assert highest_number_cubed(12000) == 22
-
-
-highest_number_cubed(30)
-highest_number_cubed(12)
-highest_number_cubed(3)
-highest_number_cubed(12000)

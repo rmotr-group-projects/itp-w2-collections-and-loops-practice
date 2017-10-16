@@ -20,6 +20,7 @@ def list_of_prime_numbers(max_number):
 
     return prime_numbers        
 
+
 # =================== #
 # ====== Tests ====== #
 # =================== #

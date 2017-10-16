@@ -6,6 +6,7 @@ def create_box(height, width, character):
 
     return box
 
+
 # Tests:
 
 first_box_expected = """
