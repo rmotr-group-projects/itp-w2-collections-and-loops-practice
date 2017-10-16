@@ -1,5 +1,16 @@
 def create_box(height, width, character):
-    pass
+    row = width * character
+    for a in range(height):
+        print(row)
+    return row
+
+
+height = 3
+width = 4
+character = '*'
+testcode = create_box(height, width, character)
+print(testcode)
+
 
 
 # Tests:
