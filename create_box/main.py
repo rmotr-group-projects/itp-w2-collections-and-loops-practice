@@ -1,23 +1,18 @@
+"""
+Here is where I read the code from
+https://stackoverflow.com/questions/32954820/how-to-make-a-rectangle-consisting-of-the-same-character
+"""
 def create_box(height, width, character):
-    numrows = 0
-    row = width * character
-    while numrows < height:
-        print(row)
-        numrows += 1
-    return (create_box)
+    line = character * width
+    box = (line + '\n') * height
+    return box
 
 
-
-
-
-
-height = 6
-width = 3
-character = '@'
+height = 3
+width = 24
+character = 'x'
 testcode = create_box(height, width, character)
 print(testcode)
-
-
 
 # Tests:
 
