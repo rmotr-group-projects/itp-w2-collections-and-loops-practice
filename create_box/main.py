@@ -1,5 +1,18 @@
 def create_box(height, width, character):
-    pass
+    result = ''
+    h = 0
+    while h < height:
+        line = width * character
+        result += line + '\n'
+        h += 1
+    return result
+
+
+print (create_box(3, 4, '*'))
+
+print (create_box(1, 1, '@'))
+
+print (create_box(3, 24, 'x'))
 
 
 # Tests:
@@ -29,3 +42,5 @@ def test_second_box():
     assert create_box(1, 1, '@') == second_box_expected
 
 # Write your own test using the `third_box_expected` box
+def test_third_box():
+    assert create_box(3, 24, 'x') == third_box_expected
