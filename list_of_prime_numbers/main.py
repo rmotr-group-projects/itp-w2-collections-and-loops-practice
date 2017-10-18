@@ -1,10 +1,34 @@
 
 def _is_prime(number):
-    pass
+    if number == 1:
+        return False
+    numberlist = []
+    counter = 0
+    for i in range(number-1):
+        counter += 1
+        numberlist.append(counter)
+    for i in numberlist:
+        if i == 1:
+            pass
+        elif number % i == 0:
+            return False
+        else:
+            pass
+    return True
 
 
 def list_of_prime_numbers(max_number):
-    pass
+    numberlist = []
+    primelist = []
+    counter = 0
+    for i in range(max_number):
+        counter += 1
+        numberlist.append(counter)
+    for i in numberlist:
+        if _is_prime(i) == True:
+            primelist.append(i)
+    
+    return primelist
 
 # =================== #
 # ====== Tests ====== #

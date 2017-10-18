@@ -1,5 +1,15 @@
 def create_box(height, width, character):
-    pass
+    var = ""
+    for i in range(width):
+        var += character
+    box = ""
+    if height > 0:
+        for i in range(height):
+            box += var + "\n"
+        
+        return box
+    else:
+        return box
 
 
 # Tests:
@@ -28,4 +38,5 @@ def test_first_box():
 def test_second_box():
     assert create_box(1, 1, '@') == second_box_expected
 
-# Write your own test using the `third_box_expected` box
+def test_third_box():
+    assert create_box(3,25,"x")
