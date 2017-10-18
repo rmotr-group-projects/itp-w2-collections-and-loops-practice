@@ -8,11 +8,15 @@ def _is_prime(number):
 
 
 def list_of_prime_numbers(max_number):
-    prime_AF = []
+    optimus = []
     for i in range(int(max_number)):
         if _is_prime(i):
-            prime_AF.append(i)
-    return prime_AF
+            optimus.append(i)
+    if max_number is 0:
+        return optimus
+    else:
+        optimus.append(max_number)
+        return optimus
 
 # =================== #
 # ====== Tests ====== #
