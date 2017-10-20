@@ -1,5 +1,16 @@
 def highest_number_cubed(limit):
-    pass
+    cubed_list = []
+    x = 0
+    while x**3 < limit:
+        cubed_list.append(x)
+        x += 1
+    return max(cubed_list)
+    
+    
+print (highest_number_cubed(30))
+print (highest_number_cubed(12))
+print (highest_number_cubed(3))
+print (highest_number_cubed(12000))
 
 
 def test_three():
