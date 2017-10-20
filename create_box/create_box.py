@@ -9,10 +9,13 @@ def create_box(height, width, character):
         a_width += '\n'
         a_width += character*width
         new_height += 1  #bug: new_height not incrementing
+    a_width += '\n'   
     return(a_width)
 
-
-
+"""
+output   '****\n****\n****'
+expected '****\n****\n****\n'
+"""
 
 # Tests:
 
@@ -41,5 +44,5 @@ def test_second_box():
     assert create_box(1, 1, '@') == second_box_expected
 
 # Write your own test using the `third_box_expected` box
-def test_second_box():
-    assert create_box(2, 2, '@') == third_box_expected
+def test_Third_box():
+    assert create_box(3, 24, 'x') == third_box_expected
