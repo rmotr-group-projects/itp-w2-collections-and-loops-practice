@@ -1,10 +1,26 @@
 
 def _is_prime(number):
-    pass
+    if number == 0:
+        return False
+    if number == 1:
+        return False
+    if number == 2:
+        return True
+    for n in range(2, number):
+        #import pdb; pdb.set_trace()
+        if number % n == 0:
+            return False
+    return True
+            
+        
 
 
 def list_of_prime_numbers(max_number):
-    pass
+    number_list = []
+    for n in range(1, (max_number +1)):
+        if _is_prime(n) is True:
+            number_list.append(n)
+    return number_list
 
 # =================== #
 # ====== Tests ====== #
@@ -16,6 +32,8 @@ def list_of_prime_numbers(max_number):
 def test_big_number_prime_true():
     assert _is_prime(19) is True
 
+def test_nine():
+    assert _is_prime(9) is False
 
 def test_big_number_prime_false():
     assert _is_prime(20) is False
