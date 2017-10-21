@@ -1,5 +1,21 @@
 def highest_number_cubed(limit):
-    pass
+    number = 0
+    valormax = 0
+    valor = 0
+    flag = 'true'
+    
+    while flag == 'true':
+        if valor > limit:
+            if valor > valormax:
+                valormax = valor
+            else:
+                flag = 'false'
+                return number-1
+        else:
+            number +=1        
+            valor = number * number * number
+            
+    return number 
 
 
 def test_three():
