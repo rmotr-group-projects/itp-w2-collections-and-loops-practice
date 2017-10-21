@@ -1,6 +1,10 @@
 def create_box(height, width, character):
-    pass
-
+    for num in range(height):
+        col = character * num
+        for num in range(width):
+            row = character * width
+        box = col + row
+    return box
 
 # Tests:
 
