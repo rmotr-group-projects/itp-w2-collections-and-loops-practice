@@ -1,33 +1,19 @@
-
 def _is_prime(number):
-    if number == 1:
+    if number == 1 or number == 0:
         return False
-    numberlist = []
-    counter = 0
-    for i in range(number-1):
-        counter += 1
-        numberlist.append(counter)
-    for i in numberlist:
+    for i in range(1,number-1):
         if i == 1:
             pass
         elif number % i == 0:
             return False
-        else:
-            pass
     return True
 
-
 def list_of_prime_numbers(max_number):
-    numberlist = []
     primelist = []
-    counter = 0
-    for i in range(max_number):
-        counter += 1
-        numberlist.append(counter)
-    for i in numberlist:
+    maxnumber1 = max_number+1
+    for i in range(maxnumber1):
         if _is_prime(i) == True:
             primelist.append(i)
-    
     return primelist
 
 # =================== #

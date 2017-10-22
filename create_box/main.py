@@ -6,7 +6,6 @@ def create_box(height, width, character):
     if height > 0:
         for i in range(height):
             box += var + "\n"
-        
         return box
     else:
         return box
@@ -39,4 +38,4 @@ def test_second_box():
     assert create_box(1, 1, '@') == second_box_expected
 
 def test_third_box():
-    assert create_box(3,25,"x")
+    assert create_box(3,24,"x") == third_box_expected
