@@ -7,7 +7,6 @@ def create_box(height, width, character):
             index = index + 1
         a = a + '\n'
         index = 0
-    print (a)
     return a
     
 

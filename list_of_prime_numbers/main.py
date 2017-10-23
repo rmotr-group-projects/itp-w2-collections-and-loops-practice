@@ -5,11 +5,9 @@ def _is_prime(number):
         return False
     for i in range(2,int(number / 2)):
         if number % i == 0:
-            print (i)
             return False
     return True
  
-
 def list_of_prime_numbers(max_number):
     result = []
     if max_number < 2:
@@ -20,7 +18,6 @@ def list_of_prime_numbers(max_number):
     return result
 
 
-print (list_of_prime_numbers(0))
 # =================== #
 # ====== Tests ====== #
 # =================== #
