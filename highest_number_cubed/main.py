@@ -1,5 +1,11 @@
 def highest_number_cubed(limit):
-    pass
+    index = 1
+    total = 0
+    
+    while total < limit:
+        total = index * index * index
+        index = index + 1
+    return index - 2
 
 
 def test_three():

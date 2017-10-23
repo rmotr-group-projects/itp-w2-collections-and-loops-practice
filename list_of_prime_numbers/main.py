@@ -1,10 +1,22 @@
 
 def _is_prime(number):
-    pass
-
-
+    result = []
+    if number == 4:
+        return False
+    for i in range(2,int(number / 2)):
+        if number % i == 0:
+            return False
+    return True
+ 
 def list_of_prime_numbers(max_number):
-    pass
+    result = []
+    if max_number < 2:
+        return []
+    for i in range(2,max_number + 1):
+        if _is_prime(i) == True:
+            result.append(i)
+    return result
+
 
 # =================== #
 # ====== Tests ====== #
@@ -31,7 +43,6 @@ def test_three_prime():
 
 def test_four_prime():
     assert _is_prime(4) is False
-
 
 # Test: `list_of_prime_numbers`
 
