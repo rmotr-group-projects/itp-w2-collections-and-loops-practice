@@ -1,4 +1,4 @@
-# [itp-w1] Highest Number Cubed
+# Highest Number Cubed
 
 Sometimes you can use programming to solve problems that would otherwise be difficult.
 For example, can you think of the highest number that, when cubed, is less than 12,000?

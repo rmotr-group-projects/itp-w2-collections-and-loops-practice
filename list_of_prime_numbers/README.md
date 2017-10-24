@@ -1,4 +1,4 @@
-# [itp-w1] List of Prime Numbers
+# List of Prime Numbers
 
 Write a program that returns a list of prime numbers that are less than the max_number argument.
 

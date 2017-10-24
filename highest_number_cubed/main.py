@@ -1,12 +1,18 @@
 def highest_number_cubed(limit):
-    previous_number = 1
+    test_values = [] # will hold all test values
+    test_value = 0 # initalize our starting value
+    cubed_number = test_value 
 
-    while True:
-        current_number = previous_number + 1
-        if current_number ** 3 > limit:
-            return previous_number
+    def cube_this(value):
+        import math               # function that returns a cubed value
+        return math.pow(value, 3)
 
-        previous_number = current_number
+    while cubed_number <= limit:
+        test_values.append(test_value)
+        test_value += 1
+        cubed_number = cube_this(test_value)
+
+    return max(test_values) # will return the highest value in the array
 
 
 def test_three():
