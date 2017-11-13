@@ -1,9 +1,12 @@
 def _is_prime(number):
+    
     if number <= 1:
         return False
-    for x in range((number - 1), 1, -1):
-        if number % n == 0:
+        
+    for potential_divisor in range(2,number):
+        if number % potential_divisor == 0:
             return False
+            
     return True
 
 
